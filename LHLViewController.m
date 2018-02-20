@@ -14,13 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *noseImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *mouthImageView;
 
-//@property (nonatomic) NSMutableArray *eyesImages;
-//@property (nonatomic) NSMutableArray *noseImages;
-//@property (nonatomic) NSMutableArray *mouthImages;
-
-@property (nonatomic) UIImage *eyes;
-@property (nonatomic) UIImage *nose;
-@property (nonatomic) UIImage *mouth;
+@property (nonatomic) PoliceSketchModel *policeSketch;
 
 @end
 
@@ -28,20 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  
+  self.policeSketch = [[PoliceSketchModel alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
-  self.eyes = [UIImage imageNamed:@"eyes_1"];
-  _eyesImageView.image = self.eyes;
+  self.policeSketch.eyes = [UIImage imageNamed:@"eyes_1"];
+  self.eyesImageView.image = self.policeSketch.eyes;
   
-  self.nose = [UIImage imageNamed:@"nose_1"];
-  _noseImageView.image = self.nose;
+  self.policeSketch.nose = [UIImage imageNamed:@"nose_1"];
+  self.noseImageView.image = self.policeSketch.nose;
 
-  self.mouth = [UIImage imageNamed:@"mouth_1"];
-  _mouthImageView.image = self.mouth;
+  self.policeSketch.mouth = [UIImage imageNamed:@"mouth_1"];
+  self.mouthImageView.image = self.policeSketch.mouth;
   
-  NSArray *eyesArray = [[NSArray alloc] initWithObjects:@"eyes_1", @"eyes_2", @"eyes_3", @"eyes_4", @"eyes_5", nil];
-  NSArray *noseArray = [[NSArray alloc] initWithObjects:@"nose_1", @"nose_2", @"nose_3", @"nose_4", @"nose_5", nil];
-  NSArray *mouthArray = [[NSArray alloc] initWithObjects:@"mouth_1", @"mouth_2", @"mouth_3", @"mouth_4", @"mouth_5", nil];
-
 }
 
 
@@ -51,31 +43,32 @@
 }
 
 - (IBAction)nextEyesImage:(id)sender {
+  UIImage *eyesImage = self.policeSketch.eyesNext;
+  self.eyesImageView.image = eyesImage;
 }
+
 - (IBAction)previousEyesImage:(id)sender {
+  UIImage *eyesImage = self.policeSketch.eyesPrevious;
+  self.eyesImageView.image = eyesImage;
 }
+
 - (IBAction)nextNoseImage:(id)sender {
+  UIImage *noseImage = self.policeSketch.noseNext;
+  self.noseImageView.image = noseImage;
 }
+
 - (IBAction)previousNoseImage:(id)sender {
+  UIImage *noseImage = self.policeSketch.nosePrevious;
+  self.noseImageView.image = noseImage;
 }
+
 - (IBAction)nextMouthImage:(id)sender {
+  UIImage *mouthImage = self.policeSketch.mouthNext;
+  self.mouthImageView.image = mouthImage;
 }
 - (IBAction)previousMouthImage:(id)sender {
+  UIImage *mouthImage = self.policeSketch.mouthPrevious;
+  self.mouthImageView.image = mouthImage;
 }
-- (instancetype)init
-{
-  self = [super init];
-  if (self) {
-//    self.eyesImageView = [[UIImageView alloc] initWithImage:_eyes];
-//    self.eyesImageView.highlightedImage = _eyes;
-//
-//    self.noseImageView = [[UIImageView alloc] initWithImage:_nose];
-//    self.noseImageView.highlightedImage = _nose;
-//
-//    self.mouthImageView = [[UIImageView alloc] initWithImage:_mouth];
-//    self.mouthImageView.highlightedImage = _mouth;
 
-  }
-  return self;
-}
 @end

@@ -29,12 +29,12 @@
                                     <action selector="nextEyesImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqG-s8-gPg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fj-gM-cIq">
-                                <rect key="frame" x="309" y="280" width="50" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCu-bc-cLl">
+                                <rect key="frame" x="309" y="170" width="50" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow_right"/>
                                 <connections>
-                                    <action selector="nextMouthImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKP-2Z-AdU"/>
+                                    <action selector="nextNoseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yG-Ua-J7c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAO-EM-ERB">
@@ -45,36 +45,36 @@
                                     <action selector="previousEyesImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nD4-Qf-yxZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSR-Um-BXt">
-                                <rect key="frame" x="16" y="280" width="50" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow_left"/>
-                                <connections>
-                                    <action selector="previousMouthImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7T-Wp-hVv"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Cl-we-lum">
-                                <rect key="frame" x="77" y="150" width="220" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HlB-A5-lOA">
-                                <rect key="frame" x="77" y="280" width="220" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCu-bc-cLl">
-                                <rect key="frame" x="309" y="150" width="50" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow_right"/>
-                                <connections>
-                                    <action selector="nextNoseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yG-Ua-J7c"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuU-pb-dhn">
-                                <rect key="frame" x="16" y="150" width="50" height="100"/>
+                                <rect key="frame" x="16" y="170" width="50" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow_left"/>
                                 <connections>
                                     <action selector="previousNoseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fCA-ho-8dh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Cl-we-lum">
+                                <rect key="frame" x="77" y="170" width="220" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HlB-A5-lOA">
+                                <rect key="frame" x="77" y="320" width="220" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fj-gM-cIq">
+                                <rect key="frame" x="309" y="320" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow_right"/>
+                                <connections>
+                                    <action selector="nextMouthImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKP-2Z-AdU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSR-Um-BXt">
+                                <rect key="frame" x="16" y="320" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow_left"/>
+                                <connections>
+                                    <action selector="previousMouthImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7T-Wp-hVv"/>
                                 </connections>
                             </button>
                         </subviews>
